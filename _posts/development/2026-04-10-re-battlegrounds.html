@@ -1,0 +1,92 @@
+---
+layout: default
+title: "Developing Re:Battlegrounds"
+permalink: /development/re-battlegrounds
+---
+
+<h1>Developing Re:Battlegrounds</h1>
+
+<div>
+    <h2>Introduction</h2>
+    <p>
+        I created Re:Battlegrounds as a way to create one of the first Re:Zero based fighting games on Roblox. I mainly took mechanics
+        found in Jujutsu Shenanigans and other battlegrounds games to create a simple but working Re:Zero battlegrounds game.
+
+    </p>
+    <p>
+        By the end of development, I have created two character movesets, which was enough for me once I stopped development.
+    </p>
+</div>
+
+<div>
+    <h2>The Beginning: Combat</h2>
+    <p>
+        Like many battlegrounds games, I started by programming the basic combat of the game. At first, these were just
+        M1s (five punches), front/side dashing, and blocking. I had tried to make a new mechanic, grabbing, which was meant to
+        counter blocking, but it was impractical and not fun to use. When I first made these mechanics, it was quite barebones and
+        barely worked, with many optimizations needed so that it functioned smoothly.
+    </p>
+    <p>
+        When I first made M1s, I used a animation-event based system where hitboxes spawned once an animation marker was triggered,
+        making it frame accurate. In general, this approach is better than using task.wait() or other methods due to its accuracy in
+        timing.
+    </p>
+    <p>
+        Dashing, however, was a mess to figure out how to code. Due to Roblox's inconsistent way of applying physics, it was
+        difficult figuring out which method was best for a battlegrounds game. If you don't know, there are three main methods
+        of applying a velocity to a part/model: LinearVelocity, BodyVelocity, or directly calling Part:ApplyLinearVelocity().
+
+    </p>
+</div>
+
+<div>
+    <h2>Creating The Skill System</h2>
+</div>
+
+<div>
+    <h2>Handling Static Data</h2>
+</div>
+
+<div>
+    <h2>The Turning Point: Voxel Destruction</h2>
+
+    <h3>OPTIMIZE OPTIMIZE OPTIMIZE</h3>
+</div>
+
+<div>
+    <h2>The Issues With Replication</h2>
+
+    <h3>Combat Replication</h3>
+    <h3>Skill Replication</h3>
+    <h3>What should the client and the server handle?</h3>
+</div>
+
+<div>
+    <h2>Designing The User Interface</h2>
+</div>
+
+<div>
+    <h2>Basing The Game Around Re:Zero</h2>
+</div>
+
+<div>
+    <h2>The Growing Issue During Development: Organization & Optimization</h2>
+</div>
+
+<div>
+    <h2>Cancelling The Game</h2>
+
+    <p>
+        But the main reason I decided to stop development was simply because <b>the game lacked creativity</b>.
+        The whole game was basically a lacking copy of Jujutsu Shenanigans, down to the mechanics and the UI.
+
+    </p>
+</div>
+
+<div>
+    <h2>Conclusion</h2>
+    <p>
+        If you want to see the current game and it's code, the following links are provided:
+    </p>
+    <p><a>Roblox Game Page</a> | <a>GitHub Repository</a></p>
+</div>

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="background" style="padding: 20px; margin-bottom: 3rem; margin-top: 2rem; width:auto; background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/sniperPlaceholder.jpg');">
+    <h1 class="centered" style="color: rgb(255, 136, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;">{{ page.title }}</h1>
+    <div class="center-container" style="width: 50%; margin: 0 auto; margin-top: 20px;">
+        <p class="centered" style="color: rgb(255, 222, 198); margin-bottom: auto;">Engine: {{ page.engine }}</p>
+        <p class="centered" style="color: rgb(255, 222, 198);">Date: {{ page.date | date: "%-d %B %Y" }}</p>
+    </div>
+</div>
+
+<div>
+    {{ content }}
+</div>

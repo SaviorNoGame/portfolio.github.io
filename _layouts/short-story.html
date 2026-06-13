@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1 style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif;">{{ page.title }}</h1>
+<div style="display:inline-block;">
+    <p style="color: rgb(146, 186, 255); display: inline; margin-right: 10px;">Year Written: {{page.written_year}}</p>
+</div>
+<br></br>
+{% if page.author_note %}
+<div style="display:inline-block;">
+    <p style="color: rgb(255, 249, 160); display: inline; margin-right: 10px;">Author's Note</p>
+</div>
+<div class="note">
+    {{ page.author_note }}
+</div>
+<hr>
+{% endif %}
+<div class="markdown">
+    {{ content }}
+</div>
